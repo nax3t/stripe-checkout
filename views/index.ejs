@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stripe Demo</title>
+</head>
+<body>
+	<form action="/charge" method="POST">
+		<article>
+			<label>Amount: $5.00</label>
+		</article>
+		<script
+			src="//checkout.stripe.com/v2/checkout.js"
+			class="stripe-button"
+			data-key="<%= keyPublishable %>"
+			data-locale="auto"
+			data-description="Sample Charge"
+			data-amount="500"
+			>	
+		</script>
+	</form>
+</body>
+</html>
